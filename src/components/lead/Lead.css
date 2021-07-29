@@ -108,6 +108,12 @@
     letter-spacing: 2.57px;
 }
 
+@media (max-width: 1172px) {
+    .lead__image_type_jupiter {
+        max-width: 520px;
+    }
+}
+
 @media (max-width: 1040px) {
 
     .lead {
