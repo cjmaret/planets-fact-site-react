@@ -77,7 +77,7 @@ function Header() {
             <img className="header__planet-icon" alt="jupiter" src={JupiterIcon} />
             <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_jupiter'} to="/jupiter" onClick={onNavClick}>Jupiter</NavLink>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
+          <img className="header__arrow-icon" alt="" src={ArrowIcon} />
         </li>
         <li className="header__list">
           <div className="header__menu-info-group">
