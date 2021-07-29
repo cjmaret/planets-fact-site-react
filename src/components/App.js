@@ -17,7 +17,7 @@ function App() {
     <div className="page">
       <Header />
       <Switch>
-        <Route exact path="/mercury">
+        <Route exact path="/">
           <LeadMercury />
         </Route>
         <Route path="/venus">
