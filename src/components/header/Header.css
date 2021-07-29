@@ -1,0 +1,383 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    z-index: 9998;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.header__menu-btn {
+    display: none;
+}
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 41px;
+    min-height: 100%;
+}
+
+.header__planet-icon {
+    display: none;
+}
+
+.header__arrow-icon {
+    display: none;
+}
+
+
+.logo-link {
+    text-decoration: none;
+    margin: 22px auto 27px 32px;
+    z-index: 1000;
+}
+
+.logo {
+    margin: 0;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 28px;
+    line-height: 36.23px;
+    letter-spacing: -1.05px;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+}
+
+.logo:hover {
+    opacity: 0.7;
+}
+
+.header__list {
+    list-style: none;
+    margin-right: 33px;
+    height: 100%;
+}
+
+.header__link {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 86px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.4s ease;
+    min-height: 100%;
+}
+
+.header__link_active_mercury {
+    border-top: 4px solid #419EBB; 
+    line-height: 82px;
+}
+
+.header__link_active_venus {
+    border-top: 4px solid #EDA249; 
+    line-height: 82px;
+}
+
+.header__link_active_earth {
+    border-top: 4px solid #6D2ED5; 
+    line-height: 82px;
+}
+
+.header__link_active_mars {
+    border-top: 4px solid #D14C32; 
+    line-height: 82px;
+}
+
+.header__link_active_jupiter {
+    border-top: 4px solid #D83A34; 
+    line-height: 82px;
+}
+
+.header__link_active_saturn{
+    border-top: 4px solid #CD5120; 
+    line-height: 82px;
+}
+
+.header__link_active_uranus {
+    border-top: 4px solid #1EC1A2; 
+    line-height: 82px;
+}
+
+.header__link_active_neptune {
+    border-top: 4px solid #2D68F0; 
+    line-height: 82px;
+}
+
+.header__menu-info-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+
+.header__link:hover {
+    opacity: 0.7;
+}
+
+
+.header__list:last-child {
+    margin-right: 0;
+}
+
+
+@media (max-width: 1040px) {
+
+    .header__list {
+        margin-right: 20px;
+    }
+
+    .menu {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__link_active_mercury {
+        line-height: 78px;
+    }
+    
+    .header__link_active_venus {
+        line-height: 78px;
+    }
+    
+    .header__link_active_earth {
+        line-height: 78px;
+    }
+    
+    .header__link_active_mars {
+        line-height: 78px;
+    }
+    
+    .header__link_active_jupiter {
+        line-height: 78px;
+    }
+    
+    .header__link_active_saturn{
+        line-height: 78px;
+    }
+    
+    .header__link_active_uranus {
+        line-height: 78px;
+    }
+    
+    .header__link_active_neptune {
+        line-height: 78px;
+    }
+
+    .menu {
+        margin-right: 0;
+        justify-content: space-around;
+    }
+
+    .header__list {
+        margin: 0 10px;
+    }
+
+    .logo-link {
+        margin: 32px auto 39px auto;
+    }
+}
+
+@media (max-width: 605px) {
+    .header {
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .header__menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+        align-self: center;
+    }
+      
+    .navicon {
+        background: white;
+        display: block;
+        height: 3px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 25px;
+        z-index: 1000;
+    }
+      
+    .navicon:before,
+    .navicon:after {
+        background: white;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+      
+    .navicon:before {
+        top: 7px;
+    }
+      
+    .navicon:after {
+        top: -7px;
+    }
+      
+    .header__menu-btn:checked ~ .header__menu-icon .navicon {
+        background: transparent;
+    }
+      
+    .header__menu-btn:checked ~ .header__menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+      
+    .header__menu-btn:checked ~ .header__menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+      
+    .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:before,
+    .header__menu-btn:checked ~ .header__menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color:#070724;
+        top: 68px;
+        bottom: 0;
+        width: 100%;
+        max-height: 0vh;
+        overflow-y: hidden;
+        z-index: 1;
+        min-height: 0;
+    }
+
+    .menu-active {
+        transition: 1s;
+        max-height: 667px;
+        min-height: 667px;
+    }
+    .menu-inactive {
+        transition: 0.7s;
+        max-height: 0vh;
+    }
+
+    .black-background {
+        visibility: hidden;
+        opacity: 0;
+        position: fixed;
+        width: 100%;
+        height: 200vh;
+        background-color: #070724;
+        z-index: -1;
+        transition: all 1s ease;
+    }
+
+    .black-background_active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        max-width: 605px;
+        margin: 0 auto;
+        width: 87.2%;
+    }
+
+    .header__list_active_mercury {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_venus {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_earth {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_mars {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_jupiter {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_saturn{
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_uranus {
+        border-top: none; 
+        padding-top: 20px;
+    }
+    
+    .header__list_active_neptune {
+        border-top: none; 
+        padding-top: 20px;
+    }
+
+    .header__list:last-child {
+        border-bottom: none;
+        margin: 0 auto;
+    }
+
+    .header__menu-info-group {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__link {
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 42px;
+        letter-spacing: 1.36px;
+    }
+
+    .header__planet-icon {
+        display: block;
+    }
+
+    .header__arrow-icon {
+        display: block;
+        margin-right: 8px;
+    }
+
+    .logo-link {
+        margin: 16px auto 16px 24px;
+    }
+}
+
