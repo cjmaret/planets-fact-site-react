@@ -24,7 +24,7 @@
     font-size: 11px;
     line-height: 25px;
     letter-spacing: 1px;
-    opacity: .5;
+    opacity: 50%;
     margin: 20px auto 4px 23px;
 }
 
@@ -38,7 +38,7 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1040px) {
     .facts {
         width: 94%;
     }

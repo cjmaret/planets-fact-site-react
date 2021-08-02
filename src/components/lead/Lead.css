@@ -57,7 +57,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
-    opacity: .5;
+    opacity: 50%;
     margin: 0 0 39px 0;
 }
 
@@ -97,7 +97,7 @@
     font-weight: 700;
     font-size: 11px;
     letter-spacing: 1px;
-    opacity: .5;
+    opacity: 50%;
     margin: auto 28px;
 }
 
@@ -106,12 +106,6 @@
     font-size: 12px;
     line-height: 25px;
     letter-spacing: 2.57px;
-}
-
-@media (max-width: 1172px) {
-    .lead__image_type_jupiter {
-        max-width: 520px;
-    }
 }
 
 @media (max-width: 1040px) {
@@ -245,7 +239,6 @@
 
     .lead {
         width: 100%;
-        margin-bottom: 0;
     }
 
     .lead__button-group {

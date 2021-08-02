@@ -118,6 +118,12 @@
     height: 100%;
 }
 
+
+.header__link:hover {
+    opacity: 0.7;
+}
+
+
 .header__list:last-child {
     margin-right: 0;
 }

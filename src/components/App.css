@@ -4,6 +4,7 @@
 
 
 .page {
+    max-width: 1440px;
     background: url(../images/background-stars.svg), #070724;
     color: white;
     margin: 0;
