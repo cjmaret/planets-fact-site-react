@@ -1,31 +1,31 @@
-import MercuryPlanetImage from '../../images/mercury/planet-mercury.svg';
-import MercuryInternalImage from '../../images/mercury/planet-mercury-internal.svg';
-import MercuryGeologyImage from '../../images/mercury/geology-mercury.png';
-import VenusPlanetImage from '../../images/venus/planet-venus.svg';
-import VenusInternalImage from '../../images/venus/planet-venus-internal.svg';
-import VenusGeologyImage from '../../images/venus/geology-venus.png';
-import EarthPlanetImage from '../../images/earth/planet-earth.svg';
-import EarthInternalImage from '../../images/earth/planet-earth-internal.svg';
-import EarthGeologyImage from '../../images/earth/geology-earth.png';
-import MarsPlanetImage from '../../images/mars/planet-mars.svg';
-import MarsInternalImage from '../../images/mars/planet-mars-internal.svg';
-import MarsGeologyImage from '../../images/mars/geology-mars.png';
-import JupiterPlanetImage from '../../images/jupiter/planet-jupiter.svg';
-import JupiterInternalImage from '../../images/jupiter/planet-jupiter-internal.svg';
-import JupiterGeologyImage from '../../images/jupiter/geology-jupiter.png';
-import SaturnPlanetImage from '../../images/saturn/planet-saturn.svg';
-import SaturnInternalImage from '../../images/saturn/planet-saturn-internal.svg';
-import SaturnGeologyImage from '../../images/saturn/geology-saturn.png';
-import UranusPlanetImage from '../../images/uranus/planet-uranus.svg';
-import UranusInternalImage from '../../images/uranus/planet-uranus-internal.svg';
-import UranusGeologyImage from '../../images/uranus/geology-uranus.png';
-import NeptunePlanetImage from '../../images/neptune/planet-neptune.svg';
-import NeptuneInternalImage from '../../images/neptune/planet-neptune-internal.svg';
-import NeptuneGeologyImage from '../../images/neptune/geology-neptune.png';
+import MercuryPlanetImage from '../images/mercury/planet-mercury.svg';
+import MercuryInternalImage from '../images/mercury/planet-mercury-internal.svg';
+import MercuryGeologyImage from '../images/mercury/geology-mercury.png';
+import VenusPlanetImage from '../images/venus/planet-venus.svg';
+import VenusInternalImage from '../images/venus/planet-venus-internal.svg';
+import VenusGeologyImage from '../images/venus/geology-venus.png';
+import EarthPlanetImage from '../images/earth/planet-earth.svg';
+import EarthInternalImage from '../images/earth/planet-earth-internal.svg';
+import EarthGeologyImage from '../images/earth/geology-earth.png';
+import MarsPlanetImage from '../images/mars/planet-mars.svg';
+import MarsInternalImage from '../images/mars/planet-mars-internal.svg';
+import MarsGeologyImage from '../images/mars/geology-mars.png';
+import JupiterPlanetImage from '../images/jupiter/planet-jupiter.svg';
+import JupiterInternalImage from '../images/jupiter/planet-jupiter-internal.svg';
+import JupiterGeologyImage from '../images/jupiter/geology-jupiter.png';
+import SaturnPlanetImage from '../images/saturn/planet-saturn.svg';
+import SaturnInternalImage from '../images/saturn/planet-saturn-internal.svg';
+import SaturnGeologyImage from '../images/saturn/geology-saturn.png';
+import UranusPlanetImage from '../images/uranus/planet-uranus.svg';
+import UranusInternalImage from '../images/uranus/planet-uranus-internal.svg';
+import UranusGeologyImage from '../images/uranus/geology-uranus.png';
+import NeptunePlanetImage from '../images/neptune/planet-neptune.svg';
+import NeptuneInternalImage from '../images/neptune/planet-neptune-internal.svg';
+import NeptuneGeologyImage from '../images/neptune/geology-neptune.png';
 
-export const planets = [
+const PlanetsData = [
     {
-        id: 'mercury',
+        id: '',
         planetImage: MercuryPlanetImage, 
         internalPlanetImage: MercuryInternalImage,
         geologyImage: MercuryGeologyImage, 
@@ -209,3 +209,5 @@ export const planets = [
         backgroundColor: "#2D68F0",
     },
 ];
+
+export default PlanetsData;
