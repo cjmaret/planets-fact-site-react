@@ -21,20 +21,6 @@ function Lead(props) {
         return () => window.removeEventListener("resize", checkWidth);
     });
 
-
-
-    function handleOverViewClick() {
-        setButtonState('overview');
-    }
-
-    function handleInternalClick() {
-        setButtonState('internal');
-    }
-
-    function handleGeologyClick() {
-        setButtonState('geology');
-    }
-
     return (
         <>
             <section className="lead">
@@ -54,18 +40,18 @@ function Lead(props) {
                             href={buttonState === "overview" ? props.overviewWikipediaLink : (buttonState === "internal" ? props.internalWikipediaLink : props.geologyWikipediaLink)} target="_blank" rel="noreferrer">Wikipedia</a></p>
                     </div>
                     <div className="lead__button-group">
-                        <div className="lead__button lead__button_type_overview" style={mobileWidth ? {borderBottom: buttonState==='overview' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'overview' && props.backgroundColor}} onClick={handleOverViewClick}>
+                        <button className="lead__button lead__button_type_overview" style={mobileWidth ? {borderBottom: buttonState==='overview' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'overview' && props.backgroundColor}} onClick={() => setButtonState('overview')}>
                             <p className="lead__button-number">01</p>
                             <p className="lead__button-text">{mobileWidth ? "Overview" : "Overview"}</p>
-                        </div>
-                        <div className="lead__button lead__button_type_internal" style={mobileWidth ? {borderBottom: buttonState==='internal' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'internal' && props.backgroundColor}} onClick={handleInternalClick}>
+                        </button>
+                        <button className="lead__button lead__button_type_internal" style={mobileWidth ? {borderBottom: buttonState==='internal' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'internal' && props.backgroundColor}} onClick={() => setButtonState('internal')}>
                             <p className="lead__button-number">02</p>
                             <p className="lead__button-text">{mobileWidth ? "Structure" : "Internal Structure"}</p>
-                        </div>
-                        <div className="lead__button lead__button_type_geology" style={mobileWidth ? {borderBottom: buttonState==='geology' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'geology' && props.backgroundColor}} onClick={handleGeologyClick}>
+                        </button>
+                        <button className="lead__button lead__button_type_geology" style={mobileWidth ? {borderBottom: buttonState==='geology' && `4px solid ${props.backgroundColor}`} : {backgroundColor: buttonState === 'geology' && props.backgroundColor}} onClick={() => setButtonState('geology')}>
                             <p className="lead__button-number">03</p>
                             <p className="lead__button-text">{mobileWidth ? "Surface" : "Surface Geology"}</p>
-                        </div>
+                        </button>
                     </div>
                 </div>
             </section>
@@ -92,41 +78,3 @@ function Lead(props) {
 }
 
 export default Lead;
-
-
-{/* <section className="lead">
-    <div className="lead__image-group lead__image-group_type_normal">
-        <img className="lead__image lead__image_type_mercury" src="../..//images/mercury/planet-mercury.svg
-" alt="mercury" />
-        <img className="lead__geology-image" src="./assets/mercury/geology-mercury.png" alt="mercury geology view" />
-    </div>
-    <div className="lead__info-group">
-        <div className="lead__image-group lead__image-group_type_mobile">
-            <img className="lead__image lead__image_mobile_mercury" src="./assets/mercury/planet-mercury.svg" alt="mercury" />
-            <img className="lead__geology-image" src="./assets/mercury/geology-mercury.png" alt="mercury geology view" />
-        </div>
-        <div className="lead__info-text">
-            <h1 className="lead__title">Mercury</h1>
-            <p className="lead__description">Mercury is the smallest planet in the Solar System and the closest
-                to the Sun. Its orbit around the Sun takes 87.97 Earth days, the
-                shortest of all the Sun's planets. Mercury is one of four terrestrial
-                planets in the Solar System, and is a rocky body like Earth.</p>
-            <p className="lead__source">Source: <a className="lead__source-link"
-                href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank">Wikipedia</a></p>
-        </div>
-        <div className="lead__button-group">
-            <div className="lead__button lead__button_type_overview">
-                <p className="lead__button-number">01</p>
-                <p className="lead__button-text">Overview</p>
-            </div>
-            <div className="lead__button lead__button_type_internal">
-                <p className="lead__button-number">02</p>
-                <p className="lead__button-text">Internal Structure</p>
-            </div>
-            <div className="lead__button lead__button_type_geology">
-                <p className="lead__button-number">03</p>
-                <p className="lead__button-text">Surface Geology</p>
-            </div>
-        </div>
-    </div>
-</section> */}
