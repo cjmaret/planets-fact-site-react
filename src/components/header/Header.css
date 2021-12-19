@@ -57,11 +57,43 @@
     list-style: none;
     margin-right: 33px;
     height: 100%;
+    text-decoration: none;
 }
 
-.header__link {
+.header__list_active_mercury {
+    box-shadow: inset 0 4px 0 0 #419EBB; 
+}
+
+.header__list_active_venus {
+    box-shadow: inset 0 4px 0 0 #EDA249;
+}
+
+.header__list_active_earth {
+    box-shadow: inset 0 4px 0 0 #6D2ED5;
+}
+
+.header__list_active_mars {
+    box-shadow: inset 0 4px 0 0 #D14C32;
+}
+
+.header__list_active_jupiter {
+    box-shadow: inset 0 4px 0 0 #D83A34;
+}
+
+.header__list_active_saturn{
+    box-shadow: inset 0 4px 0 0 #CD5120;
+}
+
+.header__list_active_uranus {
+    box-shadow: inset 0 4px 0 0 #1EC1A2;
+}
+
+.header__list_active_neptune {
+    box-shadow: inset 0 4px 0 0 #2D68F0;
+}
+
+.header__text {
     color: white;
-    text-decoration: none;
     font-weight: 700;
     font-size: 11px;
     line-height: 86px;
@@ -72,46 +104,6 @@
     min-height: 100%;
 }
 
-.header__link_active_mercury {
-    border-top: 4px solid #419EBB; 
-    line-height: 82px;
-}
-
-.header__link_active_venus {
-    border-top: 4px solid #EDA249; 
-    line-height: 82px;
-}
-
-.header__link_active_earth {
-    border-top: 4px solid #6D2ED5; 
-    line-height: 82px;
-}
-
-.header__link_active_mars {
-    border-top: 4px solid #D14C32; 
-    line-height: 82px;
-}
-
-.header__link_active_jupiter {
-    border-top: 4px solid #D83A34; 
-    line-height: 82px;
-}
-
-.header__link_active_saturn{
-    border-top: 4px solid #CD5120; 
-    line-height: 82px;
-}
-
-.header__link_active_uranus {
-    border-top: 4px solid #1EC1A2; 
-    line-height: 82px;
-}
-
-.header__link_active_neptune {
-    border-top: 4px solid #2D68F0; 
-    line-height: 82px;
-}
-
 .header__menu-info-group {
     display: flex;
     align-items: center;
@@ -119,7 +111,7 @@
 }
 
 
-.header__link:hover {
+.header__text:hover {
     opacity: 0.7;
 }
 
@@ -146,38 +138,6 @@
     .header {
         flex-direction: column;
         align-items: center;
-    }
-
-    .header__link_active_mercury {
-        line-height: 78px;
-    }
-    
-    .header__link_active_venus {
-        line-height: 78px;
-    }
-    
-    .header__link_active_earth {
-        line-height: 78px;
-    }
-    
-    .header__link_active_mars {
-        line-height: 78px;
-    }
-    
-    .header__link_active_jupiter {
-        line-height: 78px;
-    }
-    
-    .header__link_active_saturn{
-        line-height: 78px;
-    }
-    
-    .header__link_active_uranus {
-        line-height: 78px;
-    }
-    
-    .header__link_active_neptune {
-        line-height: 78px;
     }
 
     .menu {
@@ -310,46 +270,6 @@
         width: 87.2%;
     }
 
-    .header__list_active_mercury {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_venus {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_earth {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_mars {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_jupiter {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_saturn{
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_uranus {
-        border-top: none; 
-        padding-top: 20px;
-    }
-    
-    .header__list_active_neptune {
-        border-top: none; 
-        padding-top: 20px;
-    }
-
     .header__list:last-child {
         border-bottom: none;
         margin: 0 auto;
@@ -360,8 +280,8 @@
         align-items: center;
     }
 
-    .header__link {
-        margin-left: 20px;
+    .header__text {
+        margin: auto 0 auto 20px;
         font-size: 15px;
         line-height: 42px;
         letter-spacing: 1.36px;

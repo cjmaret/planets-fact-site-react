@@ -9,6 +9,7 @@ import JupiterIcon from '../../images/jupiter/menu-jupiter.png';
 import SaturnIcon from '../../images/saturn/menu-saturn.png';
 import UranusIcon from '../../images/uranus/menu-uranus.png';
 import NeptuneIcon from '../../images/neptune/menu-neptune.png';
+import ArrowRightIcon from '../../images/arrow-right.png';
 
 function Header() {
 
@@ -32,8 +33,8 @@ function Header() {
 
   function onNavClick() {
     setIsMenuOpen(!isMenuOpen);
-
   }
+
  
   return (
     <header className="header">
@@ -43,63 +44,63 @@ function Header() {
       <input className="header__menu-btn" type="checkbox" id="header__menu-btn" onClick={onNavClick} checked={isMenuOpen ? true : false} />
       <label className="header__menu-icon" htmlFor="header__menu-btn"><span className="navicon"></span></label>
       <ul className={`menu ${isMenuOpen ? 'menu-active' : 'menu-inactive'}`}>
-        <li className="header__list">
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_mercury'} exact to="/" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="mercury" src={MercuryIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_mercury'} exact to="/" onClick={onNavClick}>Mercury</NavLink>
+            <p className="header__text">Mercury</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_venus'} to="/venus" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="venus" src={VenusIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_venus'} to="/venus" onClick={onNavClick}>Venus</NavLink>
+            <p className="header__text">Venus</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_earth'} to="/earth" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="earth" src={EarthIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_earth'} to="/earth" onClick={onNavClick}>Earth</NavLink>
+            <p className="header__text">Earth</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_mars'} to="/mars" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="mars" src={MarsIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_mars'} to="/mars" onClick={onNavClick}>Mars</NavLink>
+            <p className="header__text">Mars</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_jupiter'} to="/jupiter" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="jupiter" src={JupiterIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_jupiter'} to="/jupiter" onClick={onNavClick}>Jupiter</NavLink>
+            <p className="header__text">Jupiter</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_saturn'} to="/saturn" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="saturn" src={SaturnIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_saturn'} to="/saturn" onClick={onNavClick}>Saturn</NavLink>
+            <p className="header__text">Saturn</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_uranus'} to="/uranus" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="uranus" src={UranusIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_uranus'} to="/uranus" onClick={onNavClick}>Uranus</NavLink>
+            <p className="header__text">Uranus</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <li className="header__list">
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <NavLink className="header__list" activeClassName={!mobileWidth && 'header__list_active_neptune'} to="/neptune" onClick={onNavClick}>
           <div className="header__menu-info-group">
             <img className="header__planet-icon" alt="neptune" src={NeptuneIcon} />
-            <NavLink className="header__link" activeClassName={!mobileWidth && 'header__link_active_neptune'} to="/neptune" onClick={onNavClick}>Neptune</NavLink>
+            <p className="header__text">Neptune</p>
           </div>
-          <img className="header__arrow-icon" alt="" src="./assets/arrow-right.png" />
-        </li>
-        <div className={`black-background ${isMenuOpen && 'black-background_active'}`}></div>
+          <img className="header__arrow-icon" alt="" src={ArrowRightIcon} />
+        </NavLink>
+        <div className={`black-background ${isMenuOpen && 'black-background_active'}`} onClick={onNavClick}></div>
       </ul>
     </header>
   )
