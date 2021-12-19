@@ -21,6 +21,14 @@ function Lead({ data }) {
         return () => window.removeEventListener("resize", checkWidth);
     });
 
+    // function setButtonData(internalProperty, overviewProperty) {
+    //     if (buttonState === 'internal') {
+    //         src={data.internalProperty};
+    //     } else {
+    //         src={data.overviewProperty};
+    //     }
+    // }
+
     return (
         <>
             <section className="lead">
