@@ -10,7 +10,6 @@ function App() {
   return (
     <div className="page">
       <Header />
-      <Switch>
         {PlanetsData.map((planet) => { 
           return (
             <Route exact path={`/${planet.id}`} >
@@ -18,7 +17,6 @@ function App() {
             </Route>
         )
         })}
-      </Switch>
       <Footer />
     </div>
   );
