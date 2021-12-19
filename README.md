@@ -9,10 +9,10 @@ This site is a planets-factoid site on which users can learn basic information a
 - React Routing
 - Data mapping to populate Lead with planets' details
 
-### ✨ Demo
+## ✨ Demo
 
 
 https://user-images.githubusercontent.com/77926563/146667000-767864ca-a065-4387-9cda-d0eb5f38052a.mp4
 
 
-### [GitHub Link](https://github.com/cjmaret/planets-fact-site-react)
+### ➡️ [GitHub Link](https://github.com/cjmaret/planets-fact-site-react)
