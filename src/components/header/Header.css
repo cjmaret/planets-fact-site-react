@@ -172,7 +172,7 @@
     .navicon {
         background: white;
         display: block;
-        height: 3px;
+        height: 3.5px;
         position: relative;
         transition: background .2s ease-out;
         width: 25px;
