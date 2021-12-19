@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/planets-fact-site-react/static/css/main.2370d335.chunk.css",
-    "main.js": "/planets-fact-site-react/static/js/main.8fad7c08.chunk.js",
-    "main.js.map": "/planets-fact-site-react/static/js/main.8fad7c08.chunk.js.map",
+    "main.js": "/planets-fact-site-react/static/js/main.599ff828.chunk.js",
+    "main.js.map": "/planets-fact-site-react/static/js/main.599ff828.chunk.js.map",
     "runtime-main.js": "/planets-fact-site-react/static/js/runtime-main.7490bd88.js",
     "runtime-main.js.map": "/planets-fact-site-react/static/js/runtime-main.7490bd88.js.map",
-    "static/js/2.c9d4e4d5.chunk.js": "/planets-fact-site-react/static/js/2.c9d4e4d5.chunk.js",
-    "static/js/2.c9d4e4d5.chunk.js.map": "/planets-fact-site-react/static/js/2.c9d4e4d5.chunk.js.map",
+    "static/js/2.c708addb.chunk.js": "/planets-fact-site-react/static/js/2.c708addb.chunk.js",
+    "static/js/2.c708addb.chunk.js.map": "/planets-fact-site-react/static/js/2.c708addb.chunk.js.map",
     "static/js/3.de138444.chunk.js": "/planets-fact-site-react/static/js/3.de138444.chunk.js",
     "static/js/3.de138444.chunk.js.map": "/planets-fact-site-react/static/js/3.de138444.chunk.js.map",
     "index.html": "/planets-fact-site-react/index.html",
     "static/css/main.2370d335.chunk.css.map": "/planets-fact-site-react/static/css/main.2370d335.chunk.css.map",
-    "static/js/2.c9d4e4d5.chunk.js.LICENSE.txt": "/planets-fact-site-react/static/js/2.c9d4e4d5.chunk.js.LICENSE.txt",
+    "static/js/2.c708addb.chunk.js.LICENSE.txt": "/planets-fact-site-react/static/js/2.c708addb.chunk.js.LICENSE.txt",
     "static/media/App.css": "/planets-fact-site-react/static/media/background-stars.f6233a6a.svg",
     "static/media/geology-earth.61d2b324.png": "/planets-fact-site-react/static/media/geology-earth.61d2b324.png",
     "static/media/geology-jupiter.93e4e021.png": "/planets-fact-site-react/static/media/geology-jupiter.93e4e021.png",
@@ -40,8 +40,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.7490bd88.js",
-    "static/js/2.c9d4e4d5.chunk.js",
+    "static/js/2.c708addb.chunk.js",
     "static/css/main.2370d335.chunk.css",
-    "static/js/main.8fad7c08.chunk.js"
+    "static/js/main.599ff828.chunk.js"
   ]
 }
